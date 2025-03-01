@@ -66,7 +66,8 @@ const Popup = ({ isPopupOpen, setPopupOpen }) => {
     setMessage(null);
   
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/accounts/register/", registerData);
+      const response = await axios.post("https://advertisment-backend.onrender.com/api/accounts/register/", registerData);
+
       setMessage("Registration Successful! Please log in.");
       resetForms();
     } catch (err) {
@@ -84,7 +85,8 @@ const Popup = ({ isPopupOpen, setPopupOpen }) => {
     setMessage(null);
   
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/accounts/Login/", loginData);
+      const response = await axios.post("https://advertisment-backend.onrender.com/api/accounts/Login/", loginData);
+
       setMessage("Login Successful! Redirecting...");
       resetForms();
       setTimeout(() => setPopupOpen(false), 2000);
