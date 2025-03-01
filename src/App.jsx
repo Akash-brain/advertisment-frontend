@@ -6,7 +6,7 @@ import CompanyRoutes from "./routes/CompanyRoutes";
 import { CartProvider } from "./Components/CartContext";
 import MainContent from "./Components/MainContent";
 import Cart from "./Components/Cart";
-import Joinus from "./Components/Company/joinus";
+import Joinus from "./Components/Company/Joinus";
 import Help from "./Components/Company/Help";
 
 function App() {
