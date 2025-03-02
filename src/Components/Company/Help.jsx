@@ -28,9 +28,10 @@ const Help = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/accounts/help/",
+        "https://advertisment-backend.onrender.com/api/accounts/help/",
         formData
       );
+      
 
       setSuccess("Help request submitted successfully!");
       setFormData({

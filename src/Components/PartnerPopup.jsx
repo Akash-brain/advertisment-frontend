@@ -49,7 +49,7 @@ const PartnerPopup = ({ isOpen, onClose, partnerDetails }) => {
     setSuccess("");
   
     try {
-      const response = await axios.post("http://127.0.0.1:8000/api/partner/", {
+      const response = await axios.post("https://advertisment-backend.onrender.com/api/partner/", {
         name: formData.fullName,
         email: formData.email,
         phone: formData.phone,
